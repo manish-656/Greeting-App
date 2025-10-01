@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greeting App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="card">
+        <h1>Welcome 👋</h1>
+        <p>Enter your name below:</p>
+        <form action="/greet" method="post">
+            <input type="text" name="username" placeholder="Your name" required>
+            <button type="submit">Greet Me</button>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greeting</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="card">
+        <h1>Hello, {{ name }}! 👋</h1>
+        <p class="quote">"{{ quote }}"</p>
+        <a class="btn" href="/">Go Back</a>
+    </main>
+</body>
+</html>
